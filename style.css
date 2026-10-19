@@ -1,9 +1,10 @@
 /* ==========================================================================
-   The Method Consultancy - Brand Style
+   The Method Consultancy - Minimalist & Spacious Revision
    ========================================================================== */
 
 /* --- 1. Fonts & Variables --- */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap');
+/* Stripped back to a single, clean font family to remove the jarring clash */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
   /* Color Palette */
@@ -14,15 +15,13 @@
   --color-accent: #8C5A35;       /* Warm Walnut */
 
   /* Typography */
-  --font-heading: 'Inter', sans-serif;
-  --font-body: 'Inter', sans-serif;
-  --font-accent: 'Merriweather', serif;
+  --font-main: 'Inter', sans-serif;
 
-  /* Spacing & Layout */
-  --container-width: 1100px;
-  --spacing-sm: 1rem;
-  --spacing-md: 2rem;
-  --spacing-lg: 4rem;
+  /* Spacing - Massively increased for a breathable, "sunlit boardroom" feel */
+  --spacing-sm: 1.5rem;
+  --spacing-md: 3rem;
+  --spacing-lg: 6rem;
+  --spacing-xl: 10rem;
 }
 
 /* --- 2. Base Reset & Document Setup --- */
@@ -33,129 +32,114 @@
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: var(--font-main);
+  font-weight: 300; /* Lighter base weight for an elegant, uncluttered feel */
   background-color: var(--color-background);
   color: var(--color-primary);
-  line-height: 1.6;
-  font-size: 16px;
+  line-height: 1.8; /* Dramatically increased line height for readability */
+  font-size: 1.125rem; /* Slightly larger base text */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 /* --- 3. Typography --- */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
+h1, h2, h3 {
   color: var(--color-primary);
-  line-height: 1.2;
-  font-weight: 600;
+  line-height: 1.1;
+  font-weight: 500; /* Stepped down from 600 so it doesn't shout */
+  letter-spacing: -0.03em;
   margin-bottom: var(--spacing-sm);
-  letter-spacing: -0.02em;
 }
 
+/* Fewer size variations to keep the hierarchy extremely simple */
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 h2 {
   font-size: 2.25rem;
+  margin-top: var(--spacing-md);
 }
 
 p {
   color: var(--color-secondary);
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-md); /* Pushes paragraphs further apart */
 }
 
 a {
   color: var(--color-accent);
   text-decoration: none;
-  transition: color 0.2s ease;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+  padding-bottom: 2px;
 }
 
 a:hover {
   color: var(--color-primary);
-}
-
-/* The Accent Role - great for pull quotes, subheadings, or testimonials */
-.accent-text, blockquote {
-  font-family: var(--font-accent);
-  font-style: italic;
-  color: var(--color-accent);
-  font-size: 1.25rem;
-  line-height: 1.8;
-}
-
-blockquote {
-  border-left: 4px solid var(--color-accent);
-  padding-left: var(--spacing-md);
-  margin: var(--spacing-md) 0;
+  border-bottom-color: var(--color-primary);
 }
 
 /* --- 4. Layout & Containers --- */
+/* The main container limits maximum width to stop the layout from stretching */
 .container {
-  max-width: var(--container-width);
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--spacing-md);
 }
 
+/* The Reading Column: This is the secret to good left-alignment. 
+   It forces text into a narrow, easy-to-read column surrounded by whitespace. */
+.reading-column {
+  max-width: 680px;
+  margin: 0 auto; /* Centers the block of left-aligned text on the page */
+  text-align: left;
+}
+
 .section {
-  padding: var(--spacing-lg) 0;
+  padding: var(--spacing-xl) 0; /* Huge vertical gaps between sections */
 }
 
-/* Crisp white cards for metric highlights or service pillars */
-.card {
-  background-color: var(--color-surface);
-  border: 1px solid #E2E8F0;
-  padding: var(--spacing-md);
-  border-radius: 4px; /* Slight radius for a pragmatic, sharp look */
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-}
-
-/* --- 5. Navigation & Footer --- */
-header {
-  background-color: var(--color-surface);
-  padding: var(--spacing-sm) 0;
-  border-bottom: 1px solid #E2E8F0;
-}
-
-footer {
-  background-color: var(--color-primary);
-  color: var(--color-background);
-  padding: var(--spacing-lg) 0;
+/* --- 5. Hero & Alignment Variations --- */
+/* Center alignment for short, punchy opening statements */
+.text-center {
   text-align: center;
 }
 
-footer p {
-  color: var(--color-background);
-  opacity: 0.8;
+.hero {
+  padding: var(--spacing-xl) 0;
+  text-align: center;
 }
 
-/* --- 6. Buttons & Interactive --- */
+.hero p {
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto var(--spacing-md) auto;
+  color: var(--color-primary);
+}
+
+/* Clean, borderless cards that rely on whitespace rather than boxes */
+.feature-block {
+  padding: var(--spacing-md) 0;
+  border-top: 1px solid #E2E8F0;
+}
+
+/* --- 6. Buttons --- */
 .btn {
   display: inline-block;
   background-color: var(--color-primary);
   color: var(--color-surface);
-  font-family: var(--font-heading);
-  font-weight: 500;
-  padding: 0.75rem 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  padding: 1rem 2rem;
   border: none;
-  border-radius: 2px;
   cursor: pointer;
-  transition: background-color 0.2s ease;
-  text-align: center;
+  transition: opacity 0.3s ease;
 }
 
 .btn:hover {
-  background-color: var(--color-accent);
+  opacity: 0.8;
   color: var(--color-surface);
-}
-
-.btn-secondary {
-  background-color: transparent;
-  color: var(--color-primary);
-  border: 2px solid var(--color-primary);
-}
-
-.btn-secondary:hover {
-  background-color: var(--color-primary);
-  color: var(--color-surface);
+  border-bottom-color: transparent;
 }
