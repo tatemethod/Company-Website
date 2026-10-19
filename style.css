@@ -164,3 +164,55 @@ footer p {
   margin-bottom: 0;
   font-size: 0.875rem;
 }
+/* How I Help - capability tags */
+
+.capability-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 24px 0 30px;
+}
+
+.capability-tags span {
+    display: inline-block;
+    padding: 8px 14px;
+    border: 1px solid #d7dce3;
+    border-radius: 4px;
+    background: transparent;
+    color: #18243a;
+    font-size: 0.9rem;
+    line-height: 1.2;
+}
+
+.service-number {
+    margin-bottom: 12px;
+    color: #68788f;
+    font-size: 0.9rem;
+}
+
+.service-statement {
+    margin-top: 22px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.outcome {
+    margin-top: 30px;
+    padding-top: 18px;
+    border-top: 1px solid #d7dce3;
+}
+
+.outcome-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #68788f;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.outcome p {
+    margin-top: 0;
+    font-weight: 600;
+}
