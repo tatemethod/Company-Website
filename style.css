@@ -1,13 +1,7 @@
-/* ==========================================================================
-   The Method Consultancy - Minimalist & Spacious Revision
-   ========================================================================== */
-
-/* --- 1. Fonts & Variables --- */
-/* Stripped back to a single, clean font family to remove the jarring clash */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
-  /* Color Palette */
+  /* The Method Consultancy Brand Colors */
   --color-primary: #111827;      /* Deep Navy */
   --color-background: #F9FAFB;   /* Warm White */
   --color-surface: #FFFFFF;      /* Pure White */
@@ -17,129 +11,146 @@
   /* Typography */
   --font-main: 'Inter', sans-serif;
 
-  /* Spacing - Massively increased for a breathable, "sunlit boardroom" feel */
+  /* Spacious, minimal spacing */
   --spacing-sm: 1.5rem;
   --spacing-md: 3rem;
   --spacing-lg: 6rem;
   --spacing-xl: 10rem;
 }
 
-/* --- 2. Base Reset & Document Setup --- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
 }
 
 body {
   font-family: var(--font-main);
-  font-weight: 300; /* Lighter base weight for an elegant, uncluttered feel */
+  font-weight: 300;
   background-color: var(--color-background);
   color: var(--color-primary);
-  line-height: 1.8; /* Dramatically increased line height for readability */
-  font-size: 1.125rem; /* Slightly larger base text */
+  line-height: 1.8;
+  font-size: 1.125rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* --- 3. Typography --- */
+/* Typography Hierarchy */
 h1, h2, h3 {
   color: var(--color-primary);
-  line-height: 1.1;
-  font-weight: 500; /* Stepped down from 600 so it doesn't shout */
+  line-height: 1.2;
+  font-weight: 500;
   letter-spacing: -0.03em;
   margin-bottom: var(--spacing-sm);
 }
 
-/* Fewer size variations to keep the hierarchy extremely simple */
-h1 {
-  font-size: 3.5rem;
-}
-
-h2 {
-  font-size: 2.25rem;
-  margin-top: var(--spacing-md);
-}
+h1 { font-size: 3.5rem; }
+h2 { font-size: 2.25rem; max-width: 800px; margin: 0 auto var(--spacing-sm) auto; }
+h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
 
 p {
   color: var(--color-secondary);
-  margin-bottom: var(--spacing-md); /* Pushes paragraphs further apart */
+  margin-bottom: var(--spacing-sm);
 }
 
 a {
   color: var(--color-accent);
   text-decoration: none;
-  border-bottom: 1px solid transparent;
   transition: all 0.3s ease;
-  padding-bottom: 2px;
 }
 
-a:hover {
-  color: var(--color-primary);
-  border-bottom-color: var(--color-primary);
-}
-
-/* --- 4. Layout & Containers --- */
-/* The main container limits maximum width to stop the layout from stretching */
+/* Structural Containers */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--spacing-md);
 }
 
-/* The Reading Column: This is the secret to good left-alignment. 
-   It forces text into a narrow, easy-to-read column surrounded by whitespace. */
-.reading-column {
-  max-width: 680px;
-  margin: 0 auto; /* Centers the block of left-aligned text on the page */
-  text-align: left;
-}
-
-.section {
-  padding: var(--spacing-xl) 0; /* Huge vertical gaps between sections */
-}
-
-/* --- 5. Hero & Alignment Variations --- */
-/* Center alignment for short, punchy opening statements */
 .text-center {
   text-align: center;
 }
 
-.hero {
-  padding: var(--spacing-xl) 0;
+.section { 
+  padding: var(--spacing-lg) 0; 
+}
+
+.bg-surface { 
+  background-color: var(--color-surface); 
+}
+
+/* Narrow column to make left-aligned text easy to read */
+.reading-column {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: left;
+}
+.reading-column p.text-center {
   text-align: center;
 }
 
-.hero p {
-  font-size: 1.5rem;
-  max-width: 800px;
-  margin: 0 auto var(--spacing-md) auto;
-  color: var(--color-primary);
+/* Hero & Header */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh; 
+  padding: var(--spacing-xl) 0 var(--spacing-lg) 0;
 }
 
-/* Clean, borderless cards that rely on whitespace rather than boxes */
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--color-secondary);
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
+}
+
+/* Services Grid for "What We Do" */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
 .feature-block {
-  padding: var(--spacing-md) 0;
-  border-top: 1px solid #E2E8F0;
+  background-color: var(--color-background);
+  padding: var(--spacing-md);
+  border-radius: 4px;
+  border-top: 2px solid var(--color-primary);
+}
+.feature-block p {
+  margin-bottom: 0;
+  font-size: 1rem;
 }
 
-/* --- 6. Buttons --- */
+/* Navy Call-To-Action Button */
 .btn {
   display: inline-block;
   background-color: var(--color-primary);
   color: var(--color-surface);
-  font-weight: 400;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
   font-size: 0.875rem;
-  padding: 1rem 2rem;
-  border: none;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
+  font-weight: 500;
+  padding: 1rem 2.5rem;
+  border-radius: 2px;
 }
 
 .btn:hover {
-  opacity: 0.8;
+  opacity: 0.85;
   color: var(--color-surface);
-  border-bottom-color: transparent;
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-primary);
+  padding: var(--spacing-md) 0;
+}
+
+footer p {
+  color: var(--color-background);
+  opacity: 0.7;
+  margin-bottom: 0;
+  font-size: 0.875rem;
 }
