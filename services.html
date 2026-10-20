@@ -4,283 +4,216 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How I Help | The Method Consultancy</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-white text-gray-900 font-sans antialiased flex flex-col min-h-screen">
 
-<body>
     <!-- Navigation -->
-    <nav class="site-nav">
-        <div class="container nav-inner">
-
-            <a href="index.html" class="nav-brand">
-                The Method Consultancy
-            </a>
-
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="services.html">How I Help</a>
-                <a href="#contact">Contact</a>
-            </div>
-
+    <nav class="py-5 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 flex justify-end space-x-6 text-sm text-gray-500">
+            <a href="index.html" class="hover:text-gray-900 transition-colors">Home</a>
+            <span class="text-gray-300">|</span>
+            <a href="services.html" class="text-gray-900 font-medium">How I Help</a>
+            <span class="text-gray-300">|</span>
+            <a href="index.html#contact" class="hover:text-gray-900 transition-colors">Contact</a>
         </div>
     </nav>
-    <!-- Hero -->
-    <header class="hero">
-        <div class="container text-center">
 
-            <h1>How I Help</h1>
-
-            <p class="hero-subtitle">
-                Turning change into advantage
-            </p>
-
-            <a href="mailto:hello@themethodconsultancy.co.uk" class="btn">
-                Start a Conversation
-            </a>
-
-        </div>
+    <!-- Hero Section -->
+    <header class="max-w-4xl mx-auto pt-20 pb-12 px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-light text-gray-900 mb-6">How I Help</h1>
+        <p class="text-xl text-gray-500 font-light max-w-2xl mx-auto mb-8">
+            Turning change into advantage
+        </p>
+        <a href="mailto:fiona@themethodconsultancy.co.uk" class="inline-block bg-black text-white px-8 py-3 text-sm font-semibold tracking-wider uppercase hover:bg-gray-800 transition-colors">
+            Start a Conversation
+        </a>
     </header>
 
-
     <!-- Introduction -->
-    <section class="section">
-        <div class="container text-center">
-
-            <h2>Making change work in practice</h2>
-
-            <div class="reading-column">
-
-                <p class="text-center">
-                    Method helps marketing and AdTech leaders turn strategic ambition
-                    into practical organisational change.
-                </p>
-
-                <p class="text-center">
-                    The challenge varies. The focus is the same: building organisations
-                    capable of adapting, innovating and delivering better outcomes.
-                </p>
-
-            </div>
-
+    <section class="max-w-3xl mx-auto px-4 py-12 text-center">
+        <h2 class="text-2xl md:text-3xl font-light mb-6">Making change work in practice</h2>
+        <div class="text-gray-600 leading-relaxed space-y-4">
+            <p>
+                Method helps marketing and AdTech leaders turn strategic ambition into practical organisational change.
+            </p>
+            <p>
+                The challenge varies. The focus is the same: building organisations capable of adapting, innovating and delivering better outcomes.
+            </p>
         </div>
     </section>
 
-
-    <!-- Service 01 -->
-    <section class="section bg-surface">
-        <div class="container">
-
-            <div class="reading-column">
-
-                <p class="service-number">01</p>
-
-                <h2>Building Future-Ready Marketing Organisations</h2>
-
-                <h3 class="service-statement">
+    <!-- Services Detailed -->
+    <main class="w-full">
+        
+        <!-- Service 01 -->
+        <section class="bg-[#f4f4f4] py-20 px-4">
+            <div class="max-w-4xl mx-auto">
+                <p class="text-gray-400 text-2xl font-light mb-2">01</p>
+                <h2 class="text-3xl md:text-4xl font-light mb-6">Building Future-Ready Marketing Organisations</h2>
+                <h3 class="text-xl font-medium text-gray-800 mb-6">
                     Technology is changing faster than most marketing operating models.
                 </h3>
-
-                <p>
-                    AI, automation and new approaches to measurement are creating
-                    opportunities to work differently, but taking advantage of them
-                    requires more than new technology.
-                </p>
-
-                <p>
-                    I help marketing leaders rethink how the different parts of the
-                    organisation fit together.
-                </p>
-
-                <div class="capability-tags">
-                    <span>Structure</span>
-                    <span>Capabilities</span>
-                    <span>Decision-making</span>
-                    <span>Agencies</span>
-                    <span>Technology</span>
-                    <span>Ways of working</span>
-                </div>
-
-                <div class="outcome">
-                    <span class="outcome-label">The goal</span>
+                
+                <div class="text-gray-600 leading-relaxed space-y-4 mb-8">
                     <p>
-                        An organisation designed to adapt, rather than continually
-                        having to catch up.
+                        AI, automation and new approaches to measurement are creating opportunities to work differently, but taking advantage of them requires more than new technology.
+                    </p>
+                    <p>
+                        I help marketing leaders rethink how the different parts of the organisation fit together.
                     </p>
                 </div>
 
+                <!-- Capability Tags -->
+                <div class="flex flex-wrap gap-2 mb-10">
+                    <span class="border border-gray-300 text-gray-500 text-xs uppercase tracking-wider px-3 py-1 bg-white">Structure</span>
+                    <span class="border border-gray-300 text-gray-500 text-xs uppercase tracking-wider px-3 py-1 bg-white">Capabilities</span>
+                    <span class="border border-gray-300 text-gray-500 text-xs uppercase tracking-wider px-3 py-1 bg-white">Decision-making</span>
+                    <span class="border border-gray-300 text-gray-500 text-xs uppercase tracking-wider px-3 py-1 bg-white">Agencies</span>
+                    <span class="border border-gray-300 text-gray-500 text-xs uppercase tracking-wider px-3 py-1 bg-white">Technology</span>
+                    <span class="border border-gray-300 text-gray-500 text-xs uppercase tracking-wider px-3 py-1 bg-white">Ways of working</span>
+                </div>
+
+                <!-- The Goal -->
+                <div class="border-l-4 border-black pl-6 py-2">
+                    <span class="text-xs font-bold uppercase tracking-widest text-gray-400 block mb-2">The goal</span>
+                    <p class="text-lg text-gray-900">
+                        An organisation designed to adapt, rather than continually having to catch up.
+                    </p>
+                </div>
             </div>
+        </section>
 
-        </div>
-    </section>
-
-
-    <!-- Service 02 -->
-    <section class="section">
-        <div class="container">
-
-            <div class="reading-column">
-
-                <p class="service-number">02</p>
-
-                <h2>Creating the Conditions for Innovation</h2>
-
-                <h3 class="service-statement">
-                    When everyone can access the same tools and best practices,
-                    doing today's things well isn't enough.
+        <!-- Service 02 -->
+        <section class="bg-white py-20 px-4">
+            <div class="max-w-4xl mx-auto">
+                <p class="text-gray-400 text-2xl font-light mb-2">02</p>
+                <h2 class="text-3xl md:text-4xl font-light mb-6">Creating the Conditions for Innovation</h2>
+                <h3 class="text-xl font-medium text-gray-800 mb-6">
+                    When everyone can access the same tools and best practices, doing today's things well isn't enough.
                 </h3>
-
-                <p>
-                    Competitive advantage increasingly depends on the ability to
-                    test ideas, learn quickly and turn better thinking into better execution.
-                </p>
-
-                <p>
-                    I help organisations remove the barriers between a good idea
-                    and making it happen.
-                </p>
-
-                <div class="capability-tags">
-                    <span>Ideas</span>
-                    <span>Media</span>
-                    <span>Data</span>
-                    <span>Technology</span>
-                    <span>Measurement</span>
-                    <span>Execution</span>
-                </div>
-
-                <div class="outcome">
-                    <span class="outcome-label">The goal</span>
+                
+                <div class="text-gray-600 leading-relaxed space-y-4 mb-8">
                     <p>
-                        An organisation where better ideas can become better
-                        marketing, faster.
+                        Competitive advantage increasingly depends on the ability to test ideas, learn quickly and turn better thinking into better execution.
+                    </p>
+                    <p>
+                        I help organisations remove the barriers between a good idea and making it happen.
                     </p>
                 </div>
 
+                <!-- Capability Tags -->
+                <div class="flex flex-wrap gap-2 mb-10">
+                    <span class="border border-gray-300 text-gray-500 text-xs uppercase tracking-wider px-3 py-1">Ideas</span>
+                    <span class="border border-gray-300 text-gray-500 text-xs uppercase tracking-wider px-3 py-1">Media</span>
+                    <span class="border border-gray-300 text-gray-500 text-xs uppercase tracking-wider px-3 py-1">Data</span>
+                    <span class="border border-gray-300 text-gray-500 text-xs uppercase tracking-wider px-3 py-1">Technology</span>
+                    <span class="border border-gray-300 text-gray-500 text-xs uppercase tracking-wider px-3 py-1">Measurement</span>
+                    <span class="border border-gray-300 text-gray-500 text-xs uppercase tracking-wider px-3 py-1">Execution</span>
+                </div>
+
+                <!-- The Goal -->
+                <div class="border-l-4 border-[#808080] pl-6 py-2">
+                    <span class="text-xs font-bold uppercase tracking-widest text-gray-400 block mb-2">The goal</span>
+                    <p class="text-lg text-gray-900">
+                        An organisation where better ideas can become better marketing, faster.
+                    </p>
+                </div>
             </div>
+        </section>
 
-        </div>
-    </section>
-
-
-    <!-- Service 03 -->
-    <section class="section bg-surface">
-        <div class="container">
-
-            <div class="reading-column">
-
-                <p class="service-number">03</p>
-
-                <h2>AdTech Growth & Transformation</h2>
-
-                <h3 class="service-statement">
+        <!-- Service 03 -->
+        <section class="bg-[#f4f4f4] py-20 px-4">
+            <div class="max-w-4xl mx-auto">
+                <p class="text-gray-400 text-2xl font-light mb-2">03</p>
+                <h2 class="text-3xl md:text-4xl font-light mb-6">AdTech Growth & Transformation</h2>
+                <h3 class="text-xl font-medium text-gray-800 mb-6">
                     Growth shouldn't mean complexity grows with it.
                 </h3>
-
-                <p>
-                    As AdTech businesses scale, structures that once helped them
-                    move quickly can start getting in the way. Commercial ambition
-                    and operational reality drift apart.
-                </p>
-
-                <p>
-                    I help growing businesses keep the organisation aligned around
-                    what matters.
-                </p>
-
-                <div class="capability-tags">
-                    <span>Commercial ambition</span>
-                    <span>Operating model</span>
-                    <span>Accountability</span>
-                    <span>Products</span>
-                    <span>Teams</span>
-                    <span>Delivery</span>
+                
+                <div class="text-gray-600 leading-relaxed space-y-4 mb-8">
+                    <p>
+                        As AdTech businesses scale, structures that once helped them move quickly can start getting in the way. Commercial ambition and operational reality drift apart.
+                    </p>
+                    <p>
+                        I help growing businesses keep the organisation aligned around what matters.
+                    </p>
                 </div>
 
-                <div class="outcome">
-                    <span class="outcome-label">The goal</span>
-                    <p>
+                <!-- Capability Tags -->
+                <div class="flex flex-wrap gap-2 mb-10">
+                    <span class="border border-gray-300 text-gray-500 text-xs uppercase tracking-wider px-3 py-1 bg-white">Commercial ambition</span>
+                    <span class="border border-gray-300 text-gray-500 text-xs uppercase tracking-wider px-3 py-1 bg-white">Operating model</span>
+                    <span class="border border-gray-300 text-gray-500 text-xs uppercase tracking-wider px-3 py-1 bg-white">Accountability</span>
+                    <span class="border border-gray-300 text-gray-500 text-xs uppercase tracking-wider px-3 py-1 bg-white">Products</span>
+                    <span class="border border-gray-300 text-gray-500 text-xs uppercase tracking-wider px-3 py-1 bg-white">Teams</span>
+                    <span class="border border-gray-300 text-gray-500 text-xs uppercase tracking-wider px-3 py-1 bg-white">Delivery</span>
+                </div>
+
+                <!-- The Goal -->
+                <div class="border-l-4 border-black pl-6 py-2">
+                    <span class="text-xs font-bold uppercase tracking-widest text-gray-400 block mb-2">The goal</span>
+                    <p class="text-lg text-gray-900">
                         Scaling performance without scaling unnecessary complexity.
                     </p>
                 </div>
-
             </div>
+        </section>
 
-        </div>
-    </section>
-
-
-    <!-- Method -->
-    <section class="section">
-        <div class="container text-center">
-
-            <h2>What Working with Method Looks Like</h2>
-
-            <div class="services-grid">
-
-                <div class="feature-block">
-                    <h3>Understand</h3>
-                    <p>
-                        What's the outcome, and what's getting in the way?
-                    </p>
+        <!-- Method / How I Work -->
+        <section class="bg-white py-20 px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-light text-center mb-16">What Working with Method Looks Like</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                    <div class="border border-gray-100 p-8 text-center hover:shadow-sm transition-shadow">
+                        <h3 class="text-xl font-semibold mb-4">Understand</h3>
+                        <p class="text-gray-600">What's the outcome, and what's getting in the way?</p>
+                    </div>
+                    <div class="border border-gray-100 p-8 text-center hover:shadow-sm transition-shadow">
+                        <h3 class="text-xl font-semibold mb-4">Design</h3>
+                        <p class="text-gray-600">What needs to change across people, processes, technology and structure?</p>
+                    </div>
+                    <div class="border border-gray-100 p-8 text-center hover:shadow-sm transition-shadow">
+                        <h3 class="text-xl font-semibold mb-4">Make it Happen</h3>
+                        <p class="text-gray-600">Work with the organisation to turn the answer into reality.</p>
+                    </div>
                 </div>
 
-                <div class="feature-block">
-                    <h3>Design</h3>
-                    <p>
-                        What needs to change across people, processes,
-                        technology and structure?
+                <div class="max-w-3xl mx-auto text-center border-t border-gray-200 pt-10">
+                    <p class="text-xl font-medium text-gray-800 leading-relaxed">
+                        No transformation theatre. No off-the-shelf methodology. Just practical change focused on the outcomes that matter.
                     </p>
                 </div>
+            </div>
+        </section>
 
-                <div class="feature-block">
-                    <h3>Make it Happen</h3>
+        <!-- Contact Section -->
+        <section class="bg-[#1a1a1a] text-white py-20 px-4" id="contact">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-light mb-8">Have a Challenge in Mind?</h2>
+                <div class="text-gray-300 leading-relaxed space-y-4 mb-10 text-lg">
                     <p>
-                        Work with the organisation to turn the answer into reality.
+                        Sometimes the problem is clear. Sometimes the first job is working out what really needs to change.
+                    </p>
+                    <p>
+                        Let's start with a conversation.
                     </p>
                 </div>
-
+                <a href="mailto:fiona@themethodconsultancy.co.uk" class="inline-block bg-white text-black px-8 py-3 text-sm font-semibold tracking-wider uppercase hover:bg-gray-200 transition-colors">
+                    Start a Conversation
+                </a>
             </div>
+        </section>
 
-            <div class="reading-column">
-                <p class="text-center">
-                    <strong>
-                        No transformation theatre. No off-the-shelf methodology.
-                        Just practical change focused on the outcomes that matter.
-                    </strong>
-                </p>
-            </div>
+    </main>
 
+    <!-- Footer -->
+    <footer class="bg-white py-8 border-t border-gray-100 text-center text-sm text-gray-400 mt-auto">
+        <div class="container mx-auto px-4">
+            <p>© 2026 The Method Consultancy</p>
         </div>
-    </section>
+    </footer>
 
-<!-- Contact -->
-<section class="section bg-surface" id="contact">
-        <div class="container text-center">
-
-            <h2>Have a Challenge in Mind?</h2>
-
-            <div class="reading-column">
-
-                <p class="text-center">
-                    Sometimes the problem is clear. Sometimes the first job is
-                    working out what really needs to change.
-                </p>
-
-                <p class="text-center">
-                    Let's start with a conversation.
-                </p>
-
-            </div>
-
-            <a href="mailto:hello@themethodconsultancy.co.uk" class="btn">
-                Start a Conversation
-            </a>
-
-        </div>
-    </section>
-
-
-    <footer>
-        <div class="container text-center">
-            <p>
-                <a href="index.html">Home
+</body>
+</html>
