@@ -4,202 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Method Consultancy</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Load Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Base typography settings */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+        body {
+            font-family: 'Inter', Helvetica, Arial, sans-serif;
+            background-color: #fafafa; /* Very light background for the whole page */
+        }
+    </style>
 </head>
+<body class="min-h-screen flex flex-col items-center">
 
-<body>
-    <!-- Navigation -->
-    <nav class="site-nav">
-        <div class="container nav-inner">
-
-            <a href="index.html" class="nav-brand">
-                The Method Consultancy
-            </a>
-
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="services.html">How I Help</a>
-                <a href="#contact">Contact</a>
-            </div>
-
-        </div>
-    </nav>
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="container text-center">
-         <img src="TMC_Logo%201@2x.png" alt="The Method Consultancy Logo" class="brand-logo">
-
-            <p class="hero-subtitle">
-                Helping marketing organisations adapt, innovate and perform
-            </p>
-
-            <a href="mailto:fiona@themethodconsultancy.co.uk" class="btn">
-                Start a Conversation
-            </a>
-        </div>
+    <!-- Header Navigation -->
+    <header class="w-full bg-white py-6 px-8 md:px-16 flex justify-end">
+        <nav class="flex items-center text-sm text-gray-500 tracking-wide font-light">
+            <a href="#" class="hover:text-gray-800 transition-colors">Home</a>
+            <span class="mx-4 h-4 w-px bg-gray-300"></span>
+            <a href="#" class="hover:text-gray-800 transition-colors">How I Help</a>
+            <span class="mx-4 h-4 w-px bg-gray-300"></span>
+            <a href="#" class="hover:text-gray-800 transition-colors">Contact</a>
+        </nav>
     </header>
 
+    <!-- Main Content Wrapper -->
+    <main class="w-full max-w-5xl px-4 md:px-8 mt-12 mb-20 flex-grow">
+        
+        <!-- Banner Section -->
+        <div class="flex flex-col md:flex-row w-full">
+            <!-- Left Block: Dark Grey with Logo -->
+            <div class="bg-[#1a1a1a] p-10 md:p-14 md:w-[35%] flex items-center justify-center md:justify-start min-h-[160px]">
+                <img src="TMC_Logo%201@2x.png" alt="Method Consultancy" class="h-12 md:h-16 w-auto object-contain">
+            </div>
+            <!-- Right Block: Medium Grey with Text -->
+            <div class="bg-[#7d7d7d] p-10 md:p-14 md:w-[65%] flex items-center min-h-[160px]">
+                <h2 class="text-white text-lg md:text-xl lg:text-2xl font-light tracking-wide leading-relaxed">
+                    Helping marketing organisations<br>
+                    adapt, innovate, and perform
+                </h2>
+            </div>
+        </div>
 
-    <!-- Core Philosophy -->
-    <section class="section">
-        <div class="container text-center">
-
-            <h2>
+        <!-- Main Headline Section -->
+        <div class="bg-[#f0f0f0] p-10 md:p-16 lg:p-24 flex flex-col items-start w-full">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-light text-gray-900 leading-[1.3] tracking-tight mb-12 max-w-3xl">
                 The next advantage won't come from doing the same things slightly better.
-            </h2>
-
-            <div class="reading-column">
-                <p class="text-center">
-                    Marketing is changing fast. Technology, AI and increasingly sophisticated
-                    media execution are changing where competitive advantage comes from.
-                    Method helps advertisers and AdTech businesses turn that change into
-                    better ways of working, stronger execution and measurable business impact.
-                </p>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- How I Help -->
-    <section class="section bg-surface">
-        <div class="container text-center">
-
-            <h2>How I Help</h2>
-
-            <div class="services-grid">
-
-                <div class="feature-block">
-                    <h3>Future-Ready Marketing Organisations</h3>
-                    <p>
-                        Helping marketing organisations redesign operating models,
-                        roles and ways of working so they can respond faster to
-                        change and take advantage of new capabilities.
-                    </p>
-                </div>
-
-                <div class="feature-block">
-                    <h3>Innovation & Marketing Effectiveness</h3>
-                    <p>
-                        Creating the conditions for better ideas to become better
-                        execution, connecting media, technology, data and teams
-                        around the outcomes that matter.
-                    </p>
-                </div>
-
-                <div class="feature-block">
-                    <h3>AdTech Growth & Transformation</h3>
-                    <p>
-                        Helping AdTech businesses translate commercial ambition
-                        into scalable operating models, clearer delivery and
-                        stronger organisational performance.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Experience and Credibility -->
-    <section class="section">
-        <div class="container text-center">
-
-            <h2>Turning Ambition into Execution</h2>
-
-            <div class="reading-column">
-                <p class="text-center">
-                    Strategy only creates value when organisations can execute it.
-                    I help businesses bridge the gap between ambition and delivery,
-                    bringing together media, technology, operations and organisational
-                    transformation to make change work in practice.
-                </p>
-            </div>
-
-            <div class="services-grid">
-
-                <div class="feature-block">
-                    <h3>20+ years</h3>
-                    <p>
-                        Media, technology and transformation
-                    </p>
-                </div>
-
-                <div class="feature-block">
-                    <h3>80+ markets</h3>
-                    <p>
-                        Global operating experience
-                    </p>
-                </div>
-
-                <div class="feature-block">
-                    <h3>40,000+ practitioners</h3>
-                    <p>
-                        Experience operating at genuine scale
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- About Section -->
-    <section class="section bg-surface">
-        <div class="container text-center">
-
-            <h2>About Fiona Tate</h2>
-
-            <div class="reading-column">
-
-                <p>
-                    I've spent my career making complicated organisations work better,
-                    at the intersection of media, technology, operations and transformation.
-                </p>
-
-                <p>
-                    What I've learned is that transformation rarely depends solely on
-                    finding the right technology or having the right strategy. The difficult
-                    bit is building an organisation capable of making it happen.
-                </p>
-
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- Contact Section -->
-<section class="section" id="contact">
-        <div class="container text-center">
-
-            <h2>Let's Talk</h2>
-
-            <div class="reading-column">
-
-                <p class="text-center">
-                    If you're thinking about how your marketing organisation needs to evolve,
-                    trying to unlock more innovation and effectiveness, or facing the
-                    challenges of scaling an AdTech business, I'd be happy to talk.
-                </p>
-
-            </div>
-
-            <a href="mailto:fiona@themethodconsultancy.co.uk" class="btn">
-                Start a Conversation
+            </h1>
+            <a href="#" class="inline-block bg-black text-white text-xs md:text-sm font-medium tracking-widest uppercase py-4 px-8 hover:bg-gray-800 transition-colors rounded-none">
+                Start a conversation
             </a>
-
         </div>
-    </section>
 
-
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>© 2026 The Method Consultancy</p>
+        <!-- Bottom Text Section -->
+        <div class="mt-16 md:mt-24 max-w-4xl mx-auto text-center px-4">
+            <p class="text-[#64748b] text-base md:text-lg lg:text-xl font-light leading-relaxed">
+                Marketing is changing fast. Technology, AI and increasingly sophisticated media<br class="hidden md:block">
+                execution are changing where competitive advantage comes from. Method helps<br class="hidden md:block">
+                advertisers and AdTech businesses turn that change into better ways of working,<br class="hidden md:block">
+                stronger execution and measurable business impact.
+            </p>
         </div>
-    </footer>
+
+    </main>
 
 </body>
 </html>
