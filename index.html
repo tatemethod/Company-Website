@@ -17,45 +17,42 @@
 </head>
 <body class="min-h-screen flex flex-col items-center">
 
-    <!-- Header Navigation -->
-    <header class="w-full bg-white py-6 px-8 md:px-16 flex justify-end">
-        <nav class="flex items-center text-sm text-gray-500 tracking-wide font-light">
-            <a href="#" class="hover:text-gray-800 transition-colors">Home</a>
-            <span class="mx-4 h-4 w-px bg-gray-300"></span>
-            <a href="#" class="hover:text-gray-800 transition-colors">How I Help</a>
-            <span class="mx-4 h-4 w-px bg-gray-300"></span>
-            <a href="#" class="hover:text-gray-800 transition-colors">Contact</a>
-        </nav>
-    </header>
+ <!-- Navigation -->
+    <nav class="py-3 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 flex justify-end space-x-6 text-sm text-gray-500">
+            <a href="index.html" class="hover:text-gray-900 transition-colors">Home</a>
+            <span class="text-gray-300">|</span>
+            <a href="services.html" class="hover:text-gray-900 transition-colors">How I Help</a>
+            <span class="text-gray-300">|</span>
+            <a href="#contact" class="hover:text-gray-900 transition-colors">Contact</a>
+        </div>
+    </nav>
 
-    <!-- Main Content Wrapper -->
-    <main class="w-full max-w-5xl px-4 md:px-8 mt-4 mb-20 flex-grow">
-        
-        <!-- Banner Section -->
-        <div class="flex flex-col md:flex-row w-full">
-            <!-- Left Block: Dark Grey with Logo -->
-            <div class="bg-[#1a1a1a] p-10 md:p-14 md:w-[35%] flex items-center justify-center md:justify-start min-h-[160px]">
-<img src="TMC_Logo%201@2x.png" alt="The Method Consultancy Logo" class="h-12 w-auto transform scale-[3] origin-left">    
+    <!-- Top Banner & Hero Section -->
+    <section class="max-w-5xl mx-auto pt-4 px-4 mb-8">
+        <!-- Black and Gray Banner -->
+        <div class="flex flex-col md:flex-row w-full mb-0">
+            <div class="bg-[#1a1a1a] text-white w-full md:w-1/3 p-8 flex items-center justify-center min-h-[140px]">
+                <img src="TMC_Logo%201@2x.png" alt="The Method Consultancy" class="h-12 w-auto transform scale-[2] origin-center">
             </div>
-            <!-- Right Block: Medium Grey with Text -->
-            <div class="bg-[#7d7d7d] p-10 md:p-14 md:w-[65%] flex items-center min-h-[160px]">
-                <h2 class="text-white text-lg md:text-xl lg:text-2xl font-light tracking-wide leading-relaxed">
-                    Helping marketing organisations<br>
-                    adapt, innovate, and perform
-                </h2>
+            <div class="bg-[#808080] text-white w-full md:w-2/3 p-8 flex items-center min-h-[140px]">
+                <p class="text-xl md:text-2xl font-light tracking-wide leading-relaxed">
+                    Helping marketing organisations<br>adapt, innovate, and perform
+                </p>
             </div>
         </div>
 
-        <!-- Main Headline Section -->
-        <div class="bg-[#f0f0f0] p-10 md:p-16 lg:p-24 flex flex-col items-start w-full">
-            <h1 class="text-2xl md:text-3xl lg:text-4xl font-light text-gray-900 leading-[1.3] tracking-tight mb-12 max-w-3xl">
+        <!-- Light Gray Call to Action Area -->
+        <div class="bg-[#f4f4f4] py-10 px-8 text-center flex flex-col items-center justify-center">
+            <h1 class="text-3xl md:text-4xl font-light text-gray-900 mb-8 max-w-4xl leading-tight">
                 The next advantage won't come from doing the same things slightly better.
             </h1>
-            <a href="#" class="inline-block bg-black text-white text-xs md:text-sm font-medium tracking-widest uppercase py-4 px-8 hover:bg-gray-800 transition-colors rounded-none">
-                Start a conversation
+            
+            <a href="mailto:fiona@themethodconsultancy.co.uk" class="inline-block bg-black text-white px-8 py-3 text-sm font-semibold tracking-wider uppercase hover:bg-gray-800 transition-colors">
+                Start a Conversation
             </a>
         </div>
-
+    </section>
         <!-- Bottom Text Section -->
         <div class="mt-16 md:mt-24 max-w-4xl mx-auto text-center px-4">
             <p class="text-[#64748b] text-base md:text-lg lg:text-xl font-light leading-relaxed">
