@@ -250,6 +250,10 @@ footer p {
     padding: 6px 18px;
     border-right: 1px solid #d7dce3;
 }
+.brand-logo {
+    max-height: 80px; /* Adjust this number to fit your specific header */
+    width: auto;
+}
 
 .nav-links a:first-child {
     padding-left: 0;
