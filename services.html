@@ -7,22 +7,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white text-gray-900 font-sans antialiased flex flex-col min-h-screen">
-
-   <!-- Navigation -->
-    <nav class="sticky top-0 z-50 w-full bg-black py-5">
-        <div class="max-w-6xl mx-auto px-4 flex justify-end space-x-6 text-sm text-white">
-            <a href="index.html" class="hover:text-gray-300 transition-colors">Home</a>
-            <span class="text-gray-600">|</span>
-            <!-- Added font-medium here to highlight the active page -->
-            <a href="services.html" class="hover:text-gray-300 transition-colors font-medium">How I Help</a>
-            <span class="text-gray-600">|</span>
-            <!-- Removed font-medium from About -->
-            <a href="about.html" class="hover:text-gray-300 transition-colors">About</a>
-            <span class="text-gray-600">|</span>
-            <a href="index.html#contact" class="hover:text-gray-300 transition-colors">Contact</a>
+<!-- Navigation -->
+    <nav class="sticky top-0 z-50 w-full bg-[#f4f4f4] py-5 border-b border-gray-200">
+        <!-- Changed text-sm to text-xs md:text-sm and space-x-6 to space-x-3 md:space-x-6 to prevent mobile wrapping -->
+        <div class="max-w-6xl mx-auto px-4 flex justify-end space-x-3 md:space-x-6 text-xs md:text-sm text-gray-500">
+            <a href="index.html" class="hover:text-gray-900 transition-colors">Home</a>
+            <span class="text-gray-300">|</span>
+            <a href="services.html" class="hover:text-gray-900 transition-colors">How I Help</a>
+            <span class="text-gray-300">|</span>
+            <a href="about.html" class="hover:text-gray-900 transition-colors">About</a>
+            <span class="text-gray-300">|</span>
+            <a href="index.html#contact" class="hover:text-gray-900 transition-colors">Contact</a>
         </div>
     </nav>
-
     <!-- Hero Section -->
     <header class="max-w-5xl mx-auto pt-24 pb-16 px-4 text-center">
         <h1 class="text-4xl md:text-5xl font-light text-gray-900 mb-6">How I Help</h1>
